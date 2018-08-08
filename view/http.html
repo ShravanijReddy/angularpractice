@@ -1,0 +1,23 @@
+<div ng-controller="httpctrl">
+    <div class="container">
+
+        <h2>EMPLOYEE DETAILS</h2>
+           
+        <table class="table table-condensed">
+                <thead>
+                    
+               <th>NAME</th>  
+               <th>CITY</th>  
+               <th>COUNTRY</th>
+               
+               </thead>
+               <tbody ng-repeat="x in val"> 
+                   
+                    <td>{{x.Name}}</td>
+                    <td>{{x.City}}</td>
+                    <td>{{x.Country}}</td>
+                    
+               </tbody>
+               
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div ng-controller="arrayctrl">
+        <div style="background-color: aqua" id=" Array,JSON,Objecct,Variable">    
+                <h3>JSON</h3>
+                <input type="text" ng-model="jsonName"/>
+                    <button type="button" ng-click="jsonClick(jsonName)">Click me to save value in localStorage</button>
+            <br>
+            <br>
+            <br>
+                <button type="button" ng-click="jsonValue()">Show the store value</button>
+            <br>
+            <ul>
+                <li ng-repeat="lst in jasonArray1 track by $index">{{lst}}</li>
+            </ul>
+          </div>

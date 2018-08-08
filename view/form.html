@@ -1,0 +1,30 @@
+<div ng-controller="formctrl">
+<div style="background-color: palevioletred" class="container">      
+        <div id="AngularJs Form Validation">
+            <h1>AngularJs Form Validation</h1>
+            <form name="myForm">
+              <div class="row">
+                <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" name="email"  ng-model="sign.email" required>
+                       <span style="color:red" ng-show="myForm.email.$touched && myForm.email.$invalid">
+                           <span ng-show="myForm.email.$error.required">Email is required.</span>
+                           <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                      </span>
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="password">Password:</label>
+                           <input type="password" class="form-control" placeholder="Enter password" name="password"  ng-model="sign.password " required>
+                           <span style="color:red" ng-show="myForm.password.$touched && myForm.password.$invalid">password is required.</span>
+                           <button type="submit" class="btn btn-success" ng-disabled="myForm.$invalid">sign In </button>
+                       </div>
+                       
+               </div>
+           </div>
+           </form>
+       </div>
+   </div>
+   </div>

@@ -1,0 +1,55 @@
+<html ng-app="abc">
+    <head>
+        <title>task1</title>
+        <link rel="stylesheet" href=" node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      
+        <script src="node_modules/angular/angular.min.js"></script>
+         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="node_modules/angular-route/angular-route.min.js"></script>
+        <script src="app.js"></script>
+    
+              
+    </head>          
+          <body>
+                <div  class="container">
+                     <div id="main" class="jumbotron">
+                        <h1 style='text-align:center'>hirecraft pvt</h1>
+                            <p style='text-align:center'><strong>Angular Concepts</strong></p>
+                           </div>
+                   <div class="row" data-spy="scroll" data-target="#myscrollspy" data-offset="20">
+                    <nav class="col-sm-3" id="myScrollspy">
+                      <ul class="nav nav-pills nav-stacked list-group">
+                            <li class="listgroup-item" ng-class="active"><a href="#array">Array,JSON,Objecct,Variable</a></li>
+                            
+                            <li class="list-group-item"><a href="#!exp">AngularJS Expressions</a></li>
+                            
+                            <li class="list-group-item"><a href="#!form">AngularJs Form Validation</a></li>
+                            
+                            <li class="list-group-item"><a href="#!filter">AngularJS Filters (Custom Filter)</a></li>
+                            
+                            <li class="list-group-item"><a href="#!http ">AngularJS $http service</a></li>
+                            
+                            <li class="list-group-item"><a href="#!predefine">AngularJS predefine</a></li>
+                            
+                            <li class="list-group-item"><a href="#!custom">custom Directive</a></li>
+                    </ul>
+
+                </nav>
+                <div class="col-sm-9">
+                    <ng-view>
+
+                    </ng-view>
+                    </div>
+                </div>
+              
+                
+            </div>
+            
+            </body>
+            </html>
+            
+
+
+    
